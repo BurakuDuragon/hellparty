@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
-    /* ===== RESET & VARIABLES (IDENTIQUE À L'ORIGINAL) ===== */
+    /* ===== RESET & VARIABLES ===== */
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
@@ -54,7 +54,7 @@
       opacity: 0.35;
     }
 
-    /* ===== CURSEUR PERSONNALISÉ (CORRIGÉ) ===== */
+    /* ===== CURSEUR PERSONNALISÉ (VERSION ORIGINALE FONCTIONNELLE) ===== */
     body { cursor: none; }
     .cursor, .cursor-ring { opacity: 1; }
 
@@ -877,7 +877,6 @@
         </div>
       </div>
 
-      <!-- ===== IMAGE CORRIGÉE : MICROS HUMBUCKER ===== -->
       <div class="g-item">
         <img src="https://images.unsplash.com/photo-1605020420620-20c943cc4669?w=600&q=85&auto=format&fit=crop"
              alt="Micros humbucker dorés sur guitare haut de gamme" loading="lazy">
@@ -896,12 +895,13 @@
         </div>
       </div>
 
+      <!-- ===== IMAGE CORRIGÉE : GUITARE ÉLECTRIQUE NOIRE LUCIFER GT ===== -->
       <div class="g-item">
-        <img src="https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=600&q=85&auto=format&fit=crop"
-             alt="Guitare acoustique haut de gamme en érable" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1672956940579-343848fd28de?w=600&auto=format&fit=crop&q=85"
+             alt="Guitare électrique Lucifer GT — finition noir profond" loading="lazy">
         <div class="g-caption">
           <div class="g-caption-label">Collection Prestige</div>
-          <div class="g-caption-name">Lucifer GT Maple</div>
+          <div class="g-caption-name">Lucifer GT Black Inferno</div>
         </div>
       </div>
 
@@ -1207,7 +1207,7 @@
     }, 1600);
   });
 
-  /* ===== CURSEUR PERSONNALISÉ (CORRIGÉ) ===== */
+  /* ===== CURSEUR PERSONNALISÉ (VERSION ORIGINALE) ===== */
   const cursor = document.getElementById('cursor');
   const ring   = document.getElementById('cursor-ring');
   let mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
@@ -1492,10 +1492,6 @@
       btn.style.background = '';
     });
   });
-
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js');
-  }
 
 })();
 </script>
